@@ -5,7 +5,7 @@ import { NavDropdown,Button,FormControl, Form, Nav, Navbar  }from 'react-bootstr
 function Header() {
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">Chrismas Market</Navbar.Brand>
+            <Navbar.Brand href="/">Chrismas Market</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
