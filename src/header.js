@@ -4,9 +4,13 @@ import "./home.css";
 
 function Header() {
     return (
+<<<<<<< HEAD
         <div className='header-bg'> 
 
         <Navbar bg="light transparent" expand="lg">
+=======
+        <Navbar bg="light" expand="lg">
+>>>>>>> 877f865770e749a46da94dfbb467f0c77b13c554
             <Navbar.Brand href="/">Chrismas Market</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -33,4 +37,9 @@ function Header() {
         </div>
     );
 }
+<<<<<<< HEAD
 export default Header;
+=======
+
+export default Header;
+>>>>>>> 877f865770e749a46da94dfbb467f0c77b13c554
