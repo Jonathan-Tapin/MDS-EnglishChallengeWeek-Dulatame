@@ -1,22 +1,23 @@
 import React from "react";
-import { NavDropdown,Button,FormControl, Form, Nav, Navbar  }from 'react-bootstrap';
-
+import { NavDropdown, Button, FormControl, Form, Nav, Navbar } from 'react-bootstrap';
+import "./home.css";
 
 function Header() {
     return (
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">Chrismas Market</Navbar.Brand>
+        <div className='header-bg'> 
+
+        <Navbar bg="light transparent" expand="lg">
+            <Navbar.Brand href="/">Chrismas Market</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/catalog">Catalog</Nav.Link>
                     <NavDropdown title="Artisan" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">Artisan 1</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Artisan 2</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Artisan 3</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.4">Artisan 4</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Form inline>
@@ -29,7 +30,7 @@ function Header() {
 
             </Navbar.Collapse>
         </Navbar>
+        </div>
     );
 }
-
 export default Header;

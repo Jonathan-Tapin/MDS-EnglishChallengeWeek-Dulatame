@@ -1,9 +1,9 @@
 import React from "react";
+import "./home.css";
 
 function Home() {
     return (
         <div>
-            <h3>Je suis Home</h3>
         </div>
     );
 }
