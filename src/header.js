@@ -12,7 +12,6 @@ function Header() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link className="active" href="/">Home</Nav.Link>
-                    <Nav.Link href="/catalog">Catalog</Nav.Link>
                     <NavDropdown title="Artisan" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Artisan 1</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Artisan 2</NavDropdown.Item>
