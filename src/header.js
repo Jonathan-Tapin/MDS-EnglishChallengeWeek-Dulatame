@@ -1,21 +1,17 @@
 import React from "react";
 import { NavDropdown, Button, FormControl, Form, Nav, Navbar } from 'react-bootstrap';
-import "./home.css";
+import "./header.css";
 
 function Header() {
     return (
-<<<<<<< HEAD
         <div className='header-bg'> 
 
         <Navbar bg="light transparent" expand="lg">
-=======
-        <Navbar bg="light" expand="lg">
->>>>>>> 877f865770e749a46da94dfbb467f0c77b13c554
             <Navbar.Brand href="/">Chrismas Market</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link className="active" href="/">Home</Nav.Link>
                     <Nav.Link href="/catalog">Catalog</Nav.Link>
                     <NavDropdown title="Artisan" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Artisan 1</NavDropdown.Item>
@@ -37,9 +33,4 @@ function Header() {
         </div>
     );
 }
-<<<<<<< HEAD
 export default Header;
-=======
-
-export default Header;
->>>>>>> 877f865770e749a46da94dfbb467f0c77b13c554
