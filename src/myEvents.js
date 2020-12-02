@@ -46,7 +46,7 @@ const Artisant = [
     phone: '0976546789',
     articles: [
       { id: 0, label: 'Lager beer', desc: 'Lorem ipsum', cat: 'beer', price: 10.09, qt: '3', img:'./img/blondeBeer.jpg' },
-      { id: 1, label: 'Brown beer', desc: 'Lorem ipsum', cat: 'beer', price: 13.09, qt: '2', img:'./img/brownBeer.jpg' },
+      { id: 1, label: 'Brown beer', desc: 'Lorem ipsum', cat: 'beer', price: 13.09, qt: '2', img:'./img/brownBeer.jpeg' },
       { id: 2, label: 'White beer', desc: 'Lorem ipsum', cat: 'beer', price: 17.09, qt: '12', img:'./img/whiteBeer.webp' },
       { id: 3, label: 'Black beer', desc: 'Lorem ipsum', cat: 'beer', price: 9.09, qt: '8', img:'./img/blackBeer.jpg' },
       { id: 4, label: 'White Wine', desc: 'Lorem ipsum', cat: 'wine', price: 7.09, qt: '6', img:'./img/whiteWine.jpg' },
