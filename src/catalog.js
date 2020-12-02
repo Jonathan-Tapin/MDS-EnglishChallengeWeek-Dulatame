@@ -7,23 +7,23 @@ function Catalog() {
   let url = new URL(window.location.href);
   let id = url.searchParams.get("id");
     const unArtisant = Artisant[id];
-    const [idArticle, setIdArticle] = useState('0');
+    const [myArticle, setMyArticle] = useState({});
 
   const [showModal, setShowModal] = useState(false);
   const modalClose = () => setShowModal(false);
  const modalOpen = (index) => {
     setShowModal(true);
-    setIdArticle(index);
+    setMyArticle(index);
    };
 
   return (
     <div>
-    
+
       <div className="presentation">
         <div className="txt-presentation">
         <h1>{unArtisant.title}</h1>
               <p>
-                {unArtisant.presentation} 
+                {unArtisant.presentation}
               </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ function Catalog() {
                 <Card.Text>{dat.desc}</Card.Text>
                 <Card.Text>{dat.price+" £"} </Card.Text>
                 <Button variant="primary"onClick={() => {
-                  modalOpen(dat.id)
+                  modalOpen(dat)
                 }}>
                   See more
                 </Button>
@@ -50,19 +50,19 @@ function Catalog() {
         ))}
       </Row>
 
-        
+
           <Modal show={showModal} onHide={modalClose} size="lg">
-            
+
         <Modal.Header closeButton>
-                  <Modal.Title>{ unArtisant.articles[idArticle].label}</Modal.Title>
+                  <Modal.Title>{ myArticle.label}</Modal.Title>
         </Modal.Header>
 
           <Modal.Body>
-            <Image src={unArtisant.articles[idArticle].img} thumbnail />
-            <p>{"Category : " + unArtisant.articles[idArticle].cat}</p>
-            <p>{"Description : " + unArtisant.articles[idArticle].desc}</p>
-            <p>{"Quantity left : " + unArtisant.articles[idArticle].qt}</p>
-            <p>{ "Price : " + unArtisant.articles[idArticle].price + " £"}</p>
+            <Image src={myArticle.img} thumbnail />
+            <p>{"Category : " + myArticle.cat}</p>
+            <p>{"Description : " + myArticle.desc}</p>
+            <p>{"Quantity left : " + myArticle.qt}</p>
+            <p>{ "Price : " + myArticle.price + " £"}</p>
         </Modal.Body>
 
         <Modal.Footer>
