@@ -1,6 +1,8 @@
 import React from "react";
 import  Artisant  from "./myEvents";
-import { Card, Button, Row, Col, Container, Form, FormControl } from "react-bootstrap";
+import { Card, Button, Row, Col, Container, Form } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './home.css'
 
 
@@ -27,11 +29,18 @@ function Home() {
         </div>
       </div>
       <div className="search-area">
-        <h1>Find the perfect gift !</h1>
-          <Form inline>
-            <FormControl type="text" placeholder="Cards games, Doll..." className="mr-sm-2" />
-            <Button variant="outline-success" href="/market">Search</Button>
-          </Form>
+        <h1>Find the perfect gift !</h1>   
+        <Form>
+          <div class="input-group mb-4 border rounded-pill p-1">
+            <input id="inputSearch" type="search" placeholder="Game cards, Doll ..." aria-describedby="button-addon3" class="form-control bg-none border-0"/>
+            <div class="input-group-append">
+              <button type="button" class="btn btn-link text-dark" onClick={() => {
+                 window.location.href="/market?search=" + document.getElementById("inputSearch").value
+                }}><FontAwesomeIcon icon={faSearch} /></button>
+            </div>
+            </div>
+        </Form>
+
       </div>
       <Container>
         <h2>Our artisans</h2>
