@@ -5,7 +5,8 @@ import './market.css'
 
 function Market() {
 
-    const mySearch = "dress";
+    let url = new URL(window.location.href);
+    const mySearch = url.searchParams.get("search");
 
     const [showModal, setShowModal] = useState(false);
     const [unArticle, setUnArticle] = useState({});
