@@ -12,11 +12,9 @@ const Artisant = [
       { id: 0, label: 'Red Teddy Bear', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Teddy', price: 10.09, qt: '3', img:'./img/redTeddy.jpg' },
       { id: 1, label: 'Green Teddy Bear', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Teddy', price: 11.09, qt: '2', img:'./img/greenTeddy.webp' },
       { id: 2, label: 'Orange Teddy Bear', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Teddy', price: 9.09, qt: '12', img:'./img/orangeTeddy.jpg' },
-      { id: 3, label: 'Blue Teddy Bear', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Teddy', price: 15.09, qt: '89', img:'./img/blueTeddy.jpg' },
-      { id: 4, label: 'Red Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '18', img:'./img/redSweater.jpg' },
-      { id: 5, label: 'Blue Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '14', img:'./img/blueSweater.webp' },
-      { id: 6, label: 'Wellow Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '22', img:'./img/wellowSweater.jpg' },
-      { id: 7, label: 'Green Christmas Sweater', desc: 'Wool', cat: 'Dress', price: 10.09, qt: '29', img:'./img/greenSweater.jpeg' }
+      { id: 3, label: 'Blue Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '14', img:'./img/blueSweater.webp' },
+      { id: 4, label: 'Wellow Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '22', img:'./img/wellowSweater.jpg' },
+      { id: 5, label: 'Green Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '29', img:'./img/greenSweater.jpeg' }
     ]
   },
   {
