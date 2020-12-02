@@ -1,6 +1,6 @@
 import React from "react";
 import  Artisant  from "./myEvents";
-import { Card, Button, Row, Col, Container } from "react-bootstrap";
+import { Card, Button, Row, Col, Container, Form, FormControl } from "react-bootstrap";
 import './home.css'
 
 
@@ -25,6 +25,13 @@ function Home() {
           culpa sunt.
         </p>
         </div>
+      </div>
+      <div className="search-area">
+        <h1>Find the perfect gift !</h1>
+          <Form inline>
+            <FormControl type="text" placeholder="Cards games, Doll..." className="mr-sm-2" />
+            <Button variant="outline-success" href="/market">Search</Button>
+          </Form>
       </div>
       <Container>
         <h2>Our artisans</h2>
