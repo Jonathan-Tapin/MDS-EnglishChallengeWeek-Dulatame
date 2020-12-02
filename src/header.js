@@ -4,10 +4,10 @@ import "./header.css";
 
 function Header() {
     return (
-        <div className='header-bg'> 
+        <div> 
 
         <Navbar bg="light transparent" expand="lg">
-            <Navbar.Brand href="/">Chrismas Market</Navbar.Brand>
+            <Navbar.Brand href="/">Santa Market</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                 <Nav>

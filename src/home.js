@@ -1,13 +1,14 @@
 import React from "react";
 import  Artisant  from "./myEvents";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
+import './home.css'
 
-import "./home.css"
 
 function Home() {
   return (
-    <div className="container">
-      <div>
+    <div>
+      <div className="presentation">
+        <div className="txt-presentation">
         <h1>Santa Market</h1>
         <p>
           Velit consequat sit aliquip elit est. Sunt irure do enim sint labore
@@ -23,6 +24,7 @@ function Home() {
           Do adipisicing commodo exercitation eu enim id velit. Aliqua id labore
           culpa sunt.
         </p>
+        </div>
       </div>
       <Container>
           <Row>
