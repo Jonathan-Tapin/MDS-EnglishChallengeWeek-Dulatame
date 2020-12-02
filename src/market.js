@@ -39,6 +39,7 @@ function Market() {
       else if(data.label.toLowerCase().includes(mySearch.toLowerCase()) || data.desc.toLowerCase().includes(mySearch.toLowerCase()) || data.cat.toLowerCase().includes(mySearch.toLowerCase())){
           return data
       }
+      return data
     }).map((dat) => (
           <Col>
             <Card style={{ width: "18rem" }}>
