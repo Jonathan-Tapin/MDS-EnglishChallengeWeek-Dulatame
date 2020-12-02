@@ -6,15 +6,15 @@ import './catalog.css'
 function Catalog() {
   let url = new URL(window.location.href);
   let id = url.searchParams.get("id");
-    const unArtisant = Artisant[id];
-    const [myArticle, setMyArticle] = useState({});
+  const unArtisant = Artisant[id];
+  const [myArticle, setMyArticle] = useState({});
 
   const [showModal, setShowModal] = useState(false);
   const modalClose = () => setShowModal(false);
- const modalOpen = (index) => {
+  const modalOpen = (index) => {
     setShowModal(true);
     setMyArticle(index);
-   };
+  };
 
   return (
     <div>

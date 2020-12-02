@@ -3,7 +3,9 @@ import { Card, Container, Row, Col, Button, Modal, Image } from "react-bootstrap
 import Artisant from "./myEvents";
 import './market.css'
 
-function Catalog() {
+function Market() {
+
+    const mySearch = "dress";
 
     const [showModal, setShowModal] = useState(false);
     const [unArticle, setUnArticle] = useState({});
@@ -28,7 +30,15 @@ function Catalog() {
       <Container>
       <h2>All products</h2>
       <Row>
-        {allArticles.map((dat) => (
+        {allArticles.filter((data)=>{
+      if(mySearch == null){
+        console.log("null");
+        return data
+      }
+      else if(data.label.toLowerCase().includes(mySearch.toLowerCase()) || data.desc.toLowerCase().includes(mySearch.toLowerCase()) || data.cat.toLowerCase().includes(mySearch.toLowerCase())){
+          return data
+      }
+    }).map((dat) => (
           <Col>
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={dat.img} />
@@ -75,4 +85,4 @@ function Catalog() {
   );
 }
 
-export default Catalog;
+export default Market;
