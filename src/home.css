@@ -1,15 +1,14 @@
 .presentation {
   width: 100% !important;
   height: 600px;
-  margin-bottom: 2rem;
-  padding: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../src/img/christmas-market-.jpg");
+  background-image: url("/src/img/thumbnail.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 1px solid #b4b4b1;
 }
 
 .txt-presentation {
@@ -38,6 +37,7 @@
   height: 350px;
   background-color: #9cc9a8;
   color: white;
+  border: 1px solid #b4b4b1;
 }
 
 form {
@@ -55,4 +55,3 @@ form {
 .input-group input {
   margin: auto;
 }
-
