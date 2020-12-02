@@ -27,6 +27,7 @@ function Home() {
         </div>
       </div>
       <Container>
+        <h2>Our artisans</h2>
           <Row>
         {Artisant.map((dat) => (
             <Col>

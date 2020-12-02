@@ -38,3 +38,7 @@ h2 {
 .btn {
   font-family: "Merriweather Sans", sans-serif;
 }
+
+.card {
+  margin-bottom: 2rem;
+}

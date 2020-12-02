@@ -23,3 +23,8 @@
 .txt-presentation h1 {
   margin-bottom: 2rem;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+}

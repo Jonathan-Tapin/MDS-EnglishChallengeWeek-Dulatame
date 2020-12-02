@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Container, Row, Col, Button, Modal } from "react-bootstrap";
+import { Card, Container, Row, Col, Button, Modal, Image } from "react-bootstrap";
 import Artisant from "./myEvents";
 import './catalog.css'
 
@@ -23,27 +23,13 @@ function Catalog() {
         <div className="txt-presentation">
         <h1>{unArtisant.title}</h1>
               <p>
-                <span>{unArtisant.desc}</span>
-                <br />
-                Velit consequat sit aliquip elit est. Sunt irure do enim sint labore est
-                excepteur anim ipsum excepteur veniam non do. Ipsum fugiat cillum sint
-                tempor mollit magna. Irure ea do ullamco consectetur proident qui irure.
-                Ullamco consequat nisi culpa minim est Lorem esse enim cupidatat esse
-                laborum voluptate irure culpa. Dolor dolor ipsum anim eiusmod incididunt
-                consequat fugiat aliquip commodo laboris sit. Tempor reprehenderit do eu
-                amet incididunt aute eu. Cupidatat nulla sint sint tempor aliqua aliqua
-                fugiat. Magna do reprehenderit ex anim do ullamco ea eiusmod.
-                Exercitation occaecat consequat excepteur id ullamco laborum nostrud
-                duis dolore aliqua reprehenderit cupidatat do. Do adipisicing commodo
-                exercitation eu enim id velit. Aliqua id labore culpa sunt.
+                {unArtisant.presentation} 
               </p>
         </div>
       </div>
 
-
-    
-
       <Container>
+      <h2>Our product</h2>
       <Row>
         {unArtisant.articles.map((dat) => (
           <Col>
@@ -52,7 +38,7 @@ function Catalog() {
               <Card.Body>
                 <Card.Title>{dat.label}</Card.Title>
                 <Card.Text>{dat.desc}</Card.Text>
-                <Card.Text>{dat.price}</Card.Text>
+                <Card.Text>{dat.price+" £"} </Card.Text>
                 <Button variant="primary"onClick={() => {
                   modalOpen(dat.id)
                 }}>
@@ -71,8 +57,12 @@ function Catalog() {
                   <Modal.Title>{ unArtisant.articles[idArticle].label}</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body>
-          <p>Modal body text goes here.</p>
+          <Modal.Body>
+            <Image src={unArtisant.articles[idArticle].img} thumbnail />
+            <p>{"Category : " + unArtisant.articles[idArticle].cat}</p>
+            <p>{"Description : " + unArtisant.articles[idArticle].desc}</p>
+            <p>{"Quantity left : " + unArtisant.articles[idArticle].qt}</p>
+            <p>{ "Price : " + unArtisant.articles[idArticle].price + " £"}</p>
         </Modal.Body>
 
         <Modal.Footer>
