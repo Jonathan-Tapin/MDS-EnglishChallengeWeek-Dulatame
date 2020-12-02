@@ -14,7 +14,7 @@ const Artisant = [
       { id: 2, label: 'Orange Teddy Bear', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Teddy', price: 9.09, qt: '12', img:'./img/orangeTeddy.jpg' },
       { id: 3, label: 'Blue Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '14', img:'./img/blueSweater.webp' },
       { id: 4, label: 'Wellow Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '22', img:'./img/wellowSweater.jpg' },
-      { id: 5, label: 'Green Christmas Sweater', desc: 'Wool', cat: 'Dress', price: 10.09, qt: '29', img:'./img/greenSweater.jpeg' }
+      { id: 5, label: 'Green Christmas Sweater', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', cat: 'Dress', price: 10.09, qt: '29', img:'./img/greenSweater.jpeg' }
     ]
   },
   {
