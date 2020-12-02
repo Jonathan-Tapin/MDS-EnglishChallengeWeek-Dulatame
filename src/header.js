@@ -1,14 +1,16 @@
 import React from "react";
 import {
   NavDropdown,
-  Button,
-  FormControl,
-  Form,
   Nav,
   Navbar,
+  Image
 } from "react-bootstrap";
 import "./header.css";
 import Artisant from "./myEvents";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGift } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Header() {
   return (
@@ -20,20 +22,20 @@ function Header() {
           id="basic-navbar-nav"
         >
           <Nav>
-            <Nav.Link className="active" href="/">
+            <Nav.Link activeClassName="active" to="/" exact href="/">
               Home
             </Nav.Link>
-              <NavDropdown title="Artisan" id="basic-nav-dropdown">
+              <NavDropdown title="Caftsmen" id="basic-nav-dropdown">
             {Artisant.map((dat) => (
-              <NavDropdown.Item href={"/catalog?id="+ dat.id}>
-                  {dat.title}
+              <NavDropdown.Item activeClassName="active" to={"/catalog?id="+ dat.id} exact href={"/catalog?id="+ dat.id}>
+                  {dat.title} 
                 </NavDropdown.Item>
             ))}
               </NavDropdown>
           </Nav>
-            <Navbar.Brand href="/">Santa Market</Navbar.Brand>
+            <Navbar.Brand href="/"><Image className="logo" src="logo192.png"/></Navbar.Brand>
           <Nav>
-            <Nav.Link href="/cart">Cart</Nav.Link>
+            <Nav.Link activeClassName="active" className="cart" to="/cart" exact href="/cart"><span><FontAwesomeIcon icon={ faGift}/></span><span>Cart</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
