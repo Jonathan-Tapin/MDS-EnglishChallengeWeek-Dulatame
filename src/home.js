@@ -2,6 +2,8 @@ import React from "react";
 import  Artisant  from "./myEvents";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
 
+import "./home.css"
+
 function Home() {
   return (
     <div className="container">

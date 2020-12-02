@@ -6,14 +6,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-}
-
-.transparent {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .navbar-brand {
@@ -24,14 +16,6 @@
 .nav-link {
   color: black !important;
   font-weight: bold;
-}
-
-.nav-link:hover {
-  border: 1px;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.navbar-toggler {
-  background-color: white;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
