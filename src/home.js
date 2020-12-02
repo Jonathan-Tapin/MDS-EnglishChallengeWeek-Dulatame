@@ -7,6 +7,13 @@ import './home.css'
 
 
 function Home() {
+
+const onKeyUp = (event) => {
+    if (event.key === "Enter") {
+      window.location.href="/market?search=" + document.getElementById("inputSearch").value
+    }
+}
+
   return (
     <div>
       <div className="presentation">
@@ -30,16 +37,14 @@ function Home() {
       </div>
       <div className="search-area">
         <h1>Find the perfect gift !</h1>   
-        <Form>
-          <div class="input-group mb-4 border rounded-pill p-1">
-            <input id="inputSearch" type="search" placeholder="Game cards, Doll ..." aria-describedby="button-addon3" class="form-control bg-none border-0"/>
-            <div class="input-group-append">
-              <button type="button" class="btn btn-link text-dark" onClick={() => {
+          <div className="input-group mb-4 border rounded-pill p-1">
+            <input id="inputSearch" onKeyPress={onKeyUp} type="search" placeholder="Game cards, Doll ..." aria-describedby="button-addon3" className="form-control bg-none border-0"/>
+            <div className="input-group-append">
+              <button type="button" className="btn btn-link text-dark" onClick={() => {
                  window.location.href="/market?search=" + document.getElementById("inputSearch").value
-                }}><FontAwesomeIcon icon={faSearch} /></button>
+                }}><FontAwesomeIcon icon={faSearch} size="lg" /></button>
             </div>
             </div>
-        </Form>
 
       </div>
       <Container>
