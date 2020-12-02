@@ -8,8 +8,6 @@ function Market() {
     let url = new URL(window.location.href);
     const mySearch = url.searchParams.get("search");
 
-    let test ='';
-
     const [showModal, setShowModal] = useState(false);
     const [unArticle, setUnArticle] = useState({});
     const modalClose = () => setShowModal(false);
@@ -19,18 +17,18 @@ function Market() {
     localStorage.setItem('cart', JSON.stringify(index));
    };
 
-const buyCard = (article) => {
-  let a = [];
-  // Parse the serialized data back into an aray of objects
-  a = JSON.parse(localStorage.getItem('mycart')) || [];
-  // Push the new data (whether it be an object or anything else) onto the array
-  a.push(article);
-  // Alert the array value
-  console.log(a); // Should be something like [Object array]
-  // Re-serialize the array back into a string and store it in localStorage
-  localStorage.setItem('mycart', JSON.stringify(a));
-  setShowModal(false);
-};
+  const buyCard = (article) => {
+    let a = [];
+    // Parse the serialized data back into an aray of objects
+    a = JSON.parse(localStorage.getItem('mycart')) || [];
+    // Push the new data (whether it be an object or anything else) onto the array
+    a.push(article);
+    // Alert the array value
+    console.log(a); // Should be something like [Object array]
+    // Re-serialize the array back into a string and store it in localStorage
+    localStorage.setItem('mycart', JSON.stringify(a));
+    setShowModal(false);
+  };
 
    const allArticles = []
    for (var myArtisant in Artisant) {
