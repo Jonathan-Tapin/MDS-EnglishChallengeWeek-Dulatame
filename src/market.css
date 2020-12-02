@@ -1,0 +1,25 @@
+.presentation {
+  width: 100% !important;
+  height: 600px;
+  margin-bottom: 2rem;
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../src/img/christmas-market-.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.txt-presentation {
+  width: 70%;
+  height: auto;
+  padding: 4rem;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.txt-presentation h1 {
+  margin-bottom: 2rem;
+}
