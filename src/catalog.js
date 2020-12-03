@@ -103,7 +103,7 @@ function Catalog() {
 
         <Modal show={showModal} onHide={modalClose} size="lg">
 
-          <div className="modal-div">
+          
 <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <Modal.Title>{myArticle.label}</Modal.Title>
@@ -129,7 +129,7 @@ function Catalog() {
             </div>
           </Modal.Body>
 
-          </div>
+
           
         </Modal>
       </Container>
