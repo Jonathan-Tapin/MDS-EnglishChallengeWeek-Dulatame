@@ -5,8 +5,16 @@ function Cart() {
 
   const [cartContent, setCartContent] = useState(JSON.parse(localStorage.getItem('mycart')) || []);
 
-  //const cartContent = JSON.parse(localStorage.getItem('mycart')) || [];
-  console.log(cartContent);
+  function getTotalPrice(table){
+    let total = 0;
+    for (var id in table) {
+      total += table[id].price;
+    }
+    return total.toFixed(2);
+  };
+
+  const [totalPrize, setTotalPrize] = useState(getTotalPrice(cartContent));
+
 
   const deleteCard = (article) => {
     let a = [];
@@ -15,13 +23,14 @@ function Cart() {
     a = JSON.parse(localStorage.getItem('mycart')) || [];
 
     b = a.filter(function(value, index, arr){
-        return value.label != article.label;
+        return value.label !== article.label;
     });
 
     //console.log(a);
     //console.log(b);
     localStorage.setItem('mycart', JSON.stringify(b));
     setCartContent(JSON.parse(localStorage.getItem('mycart')) || []);
+    setTotalPrize(getTotalPrice(b));
   };
 
     return (
@@ -48,6 +57,7 @@ function Cart() {
             </Col>
           ))}
         </Row>
+        <p>Total : {totalPrize} £</p>
       </Container>
       </div>
     );

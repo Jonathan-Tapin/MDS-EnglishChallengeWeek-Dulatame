@@ -25,15 +25,27 @@ function Header() {
             <Nav.Link activeClassName="active" to="/" exact href="/">
               Home
             </Nav.Link>
+            <Nav.Link activeClassName="active">
+              About us
+            </Nav.Link>
+            <Nav.Link activeClassName="active" to="/market" exact href="/market">
+              Catalog
+            </Nav.Link>
               <NavDropdown title="Caftsmen" id="basic-nav-dropdown">
             {Artisant.map((dat) => (
               <NavDropdown.Item activeClassName="active" to={"/catalog?id="+ dat.id} exact href={"/catalog?id="+ dat.id}>
-                  {dat.title} 
+                  {dat.title}
                 </NavDropdown.Item>
             ))}
               </NavDropdown>
           </Nav>
             <Navbar.Brand href="/"><Image className="logo" src="logo192.png"/></Navbar.Brand>
+              <Nav.Link activeClassName="active">
+                Delivery
+              </Nav.Link>
+              <Nav.Link activeClassName="active">
+                Terms and Conditions
+              </Nav.Link>
           <Nav>
             <Nav.Link activeClassName="active" className="cart" to="/cart" exact href="/cart"><span><FontAwesomeIcon icon={ faGift}/></span><span>Cart</span></Nav.Link>
           </Nav>
