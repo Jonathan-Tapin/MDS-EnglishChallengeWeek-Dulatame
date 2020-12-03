@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Card, Container, Row, Col, Button, Modal, Image } from "react-bootstrap";
 import Artisant from "./myEvents";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import './market.css'
+import './cards.css'
 
 function Market() {
 
@@ -37,14 +40,52 @@ function Market() {
      }
    }
 
-
+const onKeyUp = (event) => {
+    if (event.key === "Enter") {
+      window.location.href =
+        "/market?search=" + document.getElementById("inputSearch").value;
+    }
+  };
 
   return (
     <div>
-
+      <div className="presentation">
+        <div className="txt-presentation">
+        <h1>Catalog</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in tristique tortor. Vestibulum auctor nisl non consequat euismod. Donec aliquet fermentum augue eget auctor. Aliquam eros sem, eleifend eu pretium at, tempor ac sem. Donec elit libero, dictum non auctor quis, accumsan nec urna. Vivamus aliquam consequat enim, vitae consectetur nibh porttitor eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt odio a lectus rutrum imperdiet. 
+              </p>
+        </div>
+      </div>
+     <div className="search-area">
+        <h1>Find the perfect gift !</h1>
+        <div className="input-group mb-4 border rounded-pill p-1">
+          <input
+            id="inputSearch"
+            onKeyPress={onKeyUp}
+            type="search"
+            placeholder="Game cards, Doll ..."
+            aria-describedby="button-addon3"
+            className="form-control bg-none border-0"
+          />
+          <div className="input-group-append">
+            <button
+              type="button"
+              className="btn btn-link text-dark"
+              onClick={() => {
+                window.location.href =
+                  "/market?search=" +
+                  document.getElementById("inputSearch").value;
+              }}
+            >
+              <FontAwesomeIcon icon={faSearch} size="lg" />
+            </button>
+          </div>
+        </div>
+      </div>
 
       <Container>
-      <h2>All products</h2>
+      <h2>- All products - </h2>
       <Row>
         {allArticles.filter((data)=>{
       if(mySearch == null){
@@ -59,13 +100,13 @@ function Market() {
       }
     }).map((dat) => (
           <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={dat.img} />
-              <Card.Body>
+            <Card className="card-detail" style={{ width: "18rem" }}>
+              <Card.Body className="body-detail">
+              <Card.Img className="img-detail" variant="top" src={dat.img} />
                 <Card.Title>{dat.label}</Card.Title>
                 <Card.Text>{dat.desc}</Card.Text>
                 <Card.Text>{dat.price+" £"} </Card.Text>
-                <Button variant="primary" onClick={() => {
+                <Button className="btn-card" onClick={() => {
                   modalOpen(dat)
                 }}>
                   See more
@@ -96,7 +137,7 @@ function Market() {
           <Button variant="primary" onClick={() => {
             buyCard(unArticle);
           }}>
-            Buy
+            Add to cart
           </Button>
         </Modal.Footer>
       </Modal>

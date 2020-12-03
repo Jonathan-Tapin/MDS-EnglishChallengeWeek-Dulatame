@@ -2,6 +2,12 @@
   border: 6px solid #df9453;
   border-radius: 25px;
   height: 470px;
+  text-align: center;
+}
+
+.card-detail {
+  border: none;
+  height: 470px;
 }
 
 .card-header {
@@ -16,6 +22,19 @@
   border-radius: 50%;
 }
 
+.img-detail {
+  width: 150px;
+  height: 150px;
+}
+
+.body-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .h5 {
   font-family: "Sansita Swashed", cursive;
   font-size: 25px;
@@ -23,6 +42,7 @@
 
 .card-text {
   font-family: "Merriweather Sans", sans-serif;
+  margin: 10px;
 }
 
 .location {

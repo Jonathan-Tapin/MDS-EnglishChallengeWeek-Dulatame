@@ -23,3 +23,15 @@
 .txt-presentation h1 {
   margin-bottom: 2rem;
 }
+
+.img-artisan {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.col-img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
