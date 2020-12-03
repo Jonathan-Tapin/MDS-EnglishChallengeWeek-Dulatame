@@ -1,9 +1,14 @@
 import React from "react";
 import Artisant from "./myEvents";
-import { Card, Button, Row, Col, Container } from "react-bootstrap";
+import { Card, Button, Row, Col, Container, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faMapMarkerAlt,
+  faGifts,
+} from "@fortawesome/free-solid-svg-icons";
 import "./home.css";
+import "./cards.css";
 
 function Home() {
   const onKeyUp = (event) => {
@@ -68,14 +73,47 @@ function Home() {
         <Row>
           {Artisant.map((dat) => (
             <Col>
-              <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src={dat.img} />
+              <Card style={{ width: "30rem" }}>
+                <Card.Header>
+                  <Row>
+                    <Col>
+                      <Card.Img className="img" variant="top" src={dat.img} />
+                    </Col>
+                    <Col>
+                      <Card.Title>
+                        <h2>{dat.title}</h2>
+                      </Card.Title>
+                      <span className="location">
+                        <FontAwesomeIcon icon={faMapMarkerAlt} />
+                        <Card.Text>{dat.location}</Card.Text>
+                      </span>
+                      <span className="location">
+                        <FontAwesomeIcon icon={faGifts} />
+                        <Card.Text>{dat.articles[0].cat}</Card.Text>
+                      </span>
+                    </Col>
+                  </Row>
+                </Card.Header>
                 <Card.Body>
-                  <Card.Title>{dat.title}</Card.Title>
+                  <h3>- Description -</h3>
                   <Card.Text>{dat.desc}</Card.Text>
-                  <Button variant="primary" href={"/catalog?id=" + dat.id}>
-                    See more
-                  </Button>
+
+                  <Row>
+                    <Col className="img-container">
+                      <Image className="img-body" src={dat.articles[0].img}></Image>
+                    </Col>
+                    <Col className="img-container">
+                      <Image  className="img-body" src={dat.articles[1].img}></Image>
+                    </Col>
+                    <Col className="img-container">
+                      <Image  className="img-body" src={dat.articles[2].img}></Image>
+                    </Col>
+                    <Col>
+                      <Button className="btn-card" href={"/catalog?id=" + dat.id}>
+                        See our product
+                      </Button>
+                    </Col>
+                  </Row>
                 </Card.Body>
               </Card>
             </Col>
