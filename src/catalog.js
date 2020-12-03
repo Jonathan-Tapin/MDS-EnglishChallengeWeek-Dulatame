@@ -102,9 +102,7 @@ function Catalog() {
         </Row>
 
         <Modal show={showModal} onHide={modalClose} size="lg">
-
-          
-<Modal.Header closeButton></Modal.Header>
+          <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <Modal.Title>{myArticle.label}</Modal.Title>
             <p className="price">{myArticle.price + " £"}</p>
@@ -128,9 +126,6 @@ function Catalog() {
               </Button>
             </div>
           </Modal.Body>
-
-
-          
         </Modal>
       </Container>
     </div>

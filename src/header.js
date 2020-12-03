@@ -39,7 +39,7 @@ function Header() {
             ))}
               </NavDropdown>
           </Nav>
-            <Navbar.Brand href="/"><Image className="logo" src="logo192.png"/></Navbar.Brand>
+            <Navbar.Brand href="/MDS-EnglishChallengeWeek-Dulatame/"><Image className="logo" src="logo192.png"/></Navbar.Brand>
               <Nav.Link activeClassName="active">
                 Delivery
               </Nav.Link>
