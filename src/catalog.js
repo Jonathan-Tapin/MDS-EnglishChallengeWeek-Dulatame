@@ -19,6 +19,19 @@ function Catalog() {
     setMyArticle(index);
   };
 
+  const buyCard = (article) => {
+    let a = [];
+    // Parse the serialized data back into an aray of objects
+    a = JSON.parse(localStorage.getItem('mycart')) || [];
+    // Push the new data (whether it be an object or anything else) onto the array
+    a.push(article);
+    // Alert the array value
+    console.log(a); // Should be something like [Object array]
+    // Re-serialize the array back into a string and store it in localStorage
+    localStorage.setItem('mycart', JSON.stringify(a));
+    setShowModal(false);
+  };
+
   return (
     <div>
 
@@ -97,7 +110,9 @@ function Catalog() {
           <Button variant="secondary" onClick={modalClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={modalClose}>
+          <Button variant="primary" onClick={() => {
+            buyCard(myArticle);
+          }}>
             Add to cart
           </Button>
         </Modal.Footer>
