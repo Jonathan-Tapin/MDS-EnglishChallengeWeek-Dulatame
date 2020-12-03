@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/MDS-EnglishChallengeWeek-Dulatame/static/css/main.1fbd71fd.chunk.css",
-    "main.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.0855a7eb.chunk.js",
-    "main.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.0855a7eb.chunk.js.map",
+    "main.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.b025945f.chunk.js",
+    "main.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.b025945f.chunk.js.map",
     "runtime-main.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/runtime-main.dcb7a9b8.js",
     "runtime-main.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/runtime-main.dcb7a9b8.js.map",
     "static/css/2.43b2b750.chunk.css": "/MDS-EnglishChallengeWeek-Dulatame/static/css/2.43b2b750.chunk.css",
-    "static/js/2.f6d5ab63.chunk.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/2.f6d5ab63.chunk.js",
-    "static/js/2.f6d5ab63.chunk.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/2.f6d5ab63.chunk.js.map",
+    "static/js/2.af044cdc.chunk.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/2.af044cdc.chunk.js",
+    "static/js/2.af044cdc.chunk.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/2.af044cdc.chunk.js.map",
     "index.html": "/MDS-EnglishChallengeWeek-Dulatame/index.html",
     "static/css/2.43b2b750.chunk.css.map": "/MDS-EnglishChallengeWeek-Dulatame/static/css/2.43b2b750.chunk.css.map",
     "static/css/main.1fbd71fd.chunk.css.map": "/MDS-EnglishChallengeWeek-Dulatame/static/css/main.1fbd71fd.chunk.css.map",
-    "static/js/2.f6d5ab63.chunk.js.LICENSE.txt": "/MDS-EnglishChallengeWeek-Dulatame/static/js/2.f6d5ab63.chunk.js.LICENSE.txt",
+    "static/js/2.af044cdc.chunk.js.LICENSE.txt": "/MDS-EnglishChallengeWeek-Dulatame/static/js/2.af044cdc.chunk.js.LICENSE.txt",
     "static/media/market.css": "/MDS-EnglishChallengeWeek-Dulatame/static/media/christmas-market-.c57b0329.jpg",
     "static/media/catalog.css": "/MDS-EnglishChallengeWeek-Dulatame/static/media/thumbnail.c57b0329.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.dcb7a9b8.js",
     "static/css/2.43b2b750.chunk.css",
-    "static/js/2.f6d5ab63.chunk.js",
+    "static/js/2.af044cdc.chunk.js",
     "static/css/main.1fbd71fd.chunk.css",
-    "static/js/main.0855a7eb.chunk.js"
+    "static/js/main.b025945f.chunk.js"
   ]
 }
