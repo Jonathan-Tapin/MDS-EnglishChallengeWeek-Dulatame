@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import './cards.css';
 
 function Cart() {
 
@@ -39,22 +40,22 @@ function Cart() {
         <Container>
         <h2>Your cart</h2>
         <Row>
-          {cartContent.map((dat) => (
-            <Col>
-              <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src={dat.img} />
-                <Card.Body>
-                  <Card.Title>{dat.label}</Card.Title>
-                  <Card.Text>{dat.desc}</Card.Text>
-                  <Card.Text>{dat.price+" £"} </Card.Text>
-                  <Button variant="primary"onClick={() => {
-                    deleteCard(dat);
-                  }}>
-                    Delete
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
+            {cartContent.map((dat) => (
+             <Col>
+            <Card className="card-detail" style={{ width: "18rem" }}>
+              <Card.Body className="body-detail">
+              <Card.Img className="img-detail" variant="top" src={dat.img} />
+                <Card.Title>{dat.label}</Card.Title>
+                <Card.Text>{dat.desc}</Card.Text>
+                <Card.Text>{dat.price+" £"} </Card.Text>
+                <Button className="btn-card" onClick={() => {
+                  deleteCard(dat);
+                }}>
+                  Remove
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
           ))}
         </Row>
         <p>Total : {totalPrize} £</p>

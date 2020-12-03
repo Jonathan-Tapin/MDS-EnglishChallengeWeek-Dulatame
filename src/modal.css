@@ -1,0 +1,56 @@
+.modal-content {
+  border-radius: 8px, solid, #9f5a1d;
+}
+
+.modal-header {
+  background-color: white;
+  border: none !important;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.bloc-img {
+  display: flex;
+  text-align: start;
+}
+
+.img-modal {
+  width: 400px;
+  border: none;
+}
+
+.bloc-btn {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.bloc-btn button {
+  background-color: #6aae7d;
+  color: white;
+  border: 1px solid#9cc9a8;
+}
+
+.bloc-btn button:hover {
+  background-color: #6aae7d !important;
+  border: 1px solid#9cc9a8;
+}
+
+.modal-title {
+  font-family: "Sansita Swashed", cursive !important;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.price {
+  font-family: "Sansita Swashed", cursive !important;
+  color: #df9453;
+  font-size: 25px;
+  margin: 15px;
+}

@@ -50,3 +50,8 @@ h4 {
 .card {
   margin-bottom: 2rem;
 }
+
+.btn:focus {
+  background-color: #6aae7d !important;
+  border: 1px solid#9cc9a8 !important;
+}
