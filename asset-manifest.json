@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MDS-EnglishChallengeWeek-Dulatame/static/css/main.1fbd71fd.chunk.css",
-    "main.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.7d1480d4.chunk.js",
-    "main.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.7d1480d4.chunk.js.map",
+    "main.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.0855a7eb.chunk.js",
+    "main.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/main.0855a7eb.chunk.js.map",
     "runtime-main.js": "/MDS-EnglishChallengeWeek-Dulatame/static/js/runtime-main.dcb7a9b8.js",
     "runtime-main.js.map": "/MDS-EnglishChallengeWeek-Dulatame/static/js/runtime-main.dcb7a9b8.js.map",
     "static/css/2.43b2b750.chunk.css": "/MDS-EnglishChallengeWeek-Dulatame/static/css/2.43b2b750.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.43b2b750.chunk.css",
     "static/js/2.f6d5ab63.chunk.js",
     "static/css/main.1fbd71fd.chunk.css",
-    "static/js/main.7d1480d4.chunk.js"
+    "static/js/main.0855a7eb.chunk.js"
   ]
 }
