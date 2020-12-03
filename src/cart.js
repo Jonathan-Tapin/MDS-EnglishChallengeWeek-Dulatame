@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 
 function Cart() {
 
-  const cartContent = JSON.parse(localStorage.getItem('mycart')) || [];
+  const [cartContent, setCartContent] = useState(JSON.parse(localStorage.getItem('mycart')) || []);
+
+  //const cartContent = JSON.parse(localStorage.getItem('mycart')) || [];
   console.log(cartContent);
+
+  const deleteCard = (article) => {
+    let a = [];
+    let b = [];
+
+    a = JSON.parse(localStorage.getItem('mycart')) || [];
+
+    b = a.filter(function(value, index, arr){
+        return value.label != article.label;
+    });
+
+    //console.log(a);
+    //console.log(b);
+    localStorage.setItem('mycart', JSON.stringify(b));
+    setCartContent(JSON.parse(localStorage.getItem('mycart')) || []);
+  };
+
     return (
       <div>
 
@@ -20,7 +39,7 @@ function Cart() {
                   <Card.Text>{dat.desc}</Card.Text>
                   <Card.Text>{dat.price+" £"} </Card.Text>
                   <Button variant="primary"onClick={() => {
-                    console.log("delete");
+                    deleteCard(dat);
                   }}>
                     Delete
                   </Button>
