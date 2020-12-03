@@ -43,7 +43,7 @@ function Market() {
 const onKeyUp = (event) => {
     if (event.key === "Enter") {
       window.location.href =
-        "/market?search=" + document.getElementById("inputSearch").value;
+        "/MDS-EnglishChallengeWeek-Dulatame/market?search=" + document.getElementById("inputSearch").value;
     }
   };
 
@@ -53,7 +53,7 @@ const onKeyUp = (event) => {
         <div className="txt-presentation">
         <h1>Catalog</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in tristique tortor. Vestibulum auctor nisl non consequat euismod. Donec aliquet fermentum augue eget auctor. Aliquam eros sem, eleifend eu pretium at, tempor ac sem. Donec elit libero, dictum non auctor quis, accumsan nec urna. Vivamus aliquam consequat enim, vitae consectetur nibh porttitor eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt odio a lectus rutrum imperdiet. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in tristique tortor. Vestibulum auctor nisl non consequat euismod. Donec aliquet fermentum augue eget auctor. Aliquam eros sem, eleifend eu pretium at, tempor ac sem. Donec elit libero, dictum non auctor quis, accumsan nec urna. Vivamus aliquam consequat enim, vitae consectetur nibh porttitor eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt odio a lectus rutrum imperdiet.
               </p>
         </div>
       </div>
@@ -74,7 +74,7 @@ const onKeyUp = (event) => {
               className="btn btn-link text-dark"
               onClick={() => {
                 window.location.href =
-                  "/market?search=" +
+                  "/MDS-EnglishChallengeWeek-Dulatame/market?search=" +
                   document.getElementById("inputSearch").value;
               }}
             >

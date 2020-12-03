@@ -14,10 +14,10 @@ const routing = (
   <Router>
     <Header />
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/catalog" component={Catalog} />
-      <Route path="/cart" component={Cart} />
-      <Route path="/market" component={Market} />
+      <Route exact path="/MDS-EnglishChallengeWeek-Dulatame/" component={Home} />
+      <Route path="/MDS-EnglishChallengeWeek-Dulatame/catalog" component={Catalog} />
+      <Route path="/MDS-EnglishChallengeWeek-Dulatame/cart" component={Cart} />
+      <Route path="/MDS-EnglishChallengeWeek-Dulatame/market" component={Market} />
     </Switch>
     <Footer />
   </Router>

@@ -14,7 +14,7 @@ function Home() {
   const onKeyUp = (event) => {
     if (event.key === "Enter") {
       window.location.href =
-        "/market?search=" + document.getElementById("inputSearch").value;
+        "/MDS-EnglishChallengeWeek-Dulatame/market?search=" + document.getElementById("inputSearch").value;
     }
   };
 
@@ -56,7 +56,7 @@ function Home() {
               className="btn btn-link text-dark"
               onClick={() => {
                 window.location.href =
-                  "/market?search=" +
+                  "/MDS-EnglishChallengeWeek-Dulatame/market?search=" +
                   document.getElementById("inputSearch").value;
               }}
             >
@@ -109,7 +109,7 @@ function Home() {
                       <Image  className="img-body" src={dat.articles[2].img}></Image>
                     </Col>
                     <Col>
-                      <Button className="btn-card" href={"/catalog?id=" + dat.id}>
+                      <Button className="btn-card" href={"/MDS-EnglishChallengeWeek-Dulatame/catalog?id=" + dat.id}>
                         See our product
                       </Button>
                     </Col>

@@ -22,18 +22,18 @@ function Header() {
           id="basic-navbar-nav"
         >
           <Nav>
-            <Nav.Link activeClassName="active" to="/" exact href="/">
+            <Nav.Link activeClassName="active" to="/MDS-EnglishChallengeWeek-Dulatame/" exact href="/MDS-EnglishChallengeWeek-Dulatame/">
               Home
             </Nav.Link>
             <Nav.Link activeClassName="active">
               About us
             </Nav.Link>
-            <Nav.Link activeClassName="active" to="/market" exact href="/market">
+            <Nav.Link activeClassName="active" to="/MDS-EnglishChallengeWeek-Dulatame/market" exact href="/MDS-EnglishChallengeWeek-Dulatame/market">
               Catalog
             </Nav.Link>
               <NavDropdown title="Caftsmen" id="basic-nav-dropdown">
             {Artisant.map((dat) => (
-              <NavDropdown.Item activeClassName="active" to={"/catalog?id="+ dat.id} exact href={"/catalog?id="+ dat.id}>
+              <NavDropdown.Item activeClassName="active" to={"/MDS-EnglishChallengeWeek-Dulatame/catalog?id="+ dat.id} exact href={"/MDS-EnglishChallengeWeek-Dulatame/catalog?id="+ dat.id}>
                   {dat.title}
                 </NavDropdown.Item>
             ))}
@@ -47,7 +47,7 @@ function Header() {
                 Terms and Conditions
               </Nav.Link>
           <Nav>
-            <Nav.Link activeClassName="active" className="cart" to="/cart" exact href="/cart"><span><FontAwesomeIcon icon={ faGift}/></span><span>Cart</span></Nav.Link>
+            <Nav.Link activeClassName="active" className="cart" to="/MDS-EnglishChallengeWeek-Dulatame/cart" exact href="/MDS-EnglishChallengeWeek-Dulatame/cart"><span><FontAwesomeIcon icon={ faGift}/></span><span>Cart</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
